@@ -1,0 +1,15 @@
+<h1>RailsBridgeCorp Open Jobs</h1>
+<table id="dataTable" class="jobs-table" cellspacing="0" width="100%">
+  <tr>
+    <th>Title</th>
+    <th>Location</th>
+    <th></th>
+  </tr>
+<% @jobs.each do |job| %>
+  <tr>
+    <td><%= job.title %></td>
+    <td><%= job.location %></td>
+    <td><%= link_to "Show Posting", job, method: :get%></h5>
+  </tr>
+<% end %>
+</table>
